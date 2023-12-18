@@ -14,7 +14,6 @@ export default function CreateCourse() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(e.target)
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -66,7 +65,7 @@ export default function CreateCourse() {
                 </p>
                 <div className="flex gap-3">
                 <div class="flex items-center">
-                         <input  type="radio" value="Begginer" name="level" className="w-4 h-" onChange={handleChange}/>
+                         <input defaultChecked defaultValue={"Begginer"}  type="radio" value="Begginer" name="level" className="w-4 h-" onChange={handleChange}/>
                          <label className="ms-2">Begginer</label>
                      </div>
                      <div class="flex items-center">
@@ -106,7 +105,7 @@ export default function CreateCourse() {
                 </p>
                 <div className="flex gap-3">
                      <div class="flex items-center">
-                         <input  type="radio" value="Slow" name="pace" class="w-4 h-4" onChange={handleChange} />
+                         <input defaultChecked defaultValue={"Slow"}  type="radio" value="Slow" name="pace" class="w-4 h-4" onChange={handleChange} />
                          <label  class="ms-2">Slow</label>
                      </div>
                     <div class="flex items-center">
