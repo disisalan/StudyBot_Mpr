@@ -29,7 +29,7 @@ export default function CreateCourse() {
 
   return (
     <>
-      <div className="p-3 font-sans">
+      <div className="p-3 font-sans  bg-gradient-to-r from-violet-200 to-pink-200">
         <div className="flex items-center justify-center pt-5 gap-24">
           <div>
             <div className="p-3">
@@ -56,7 +56,7 @@ export default function CreateCourse() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Something like - My react course"
-                  className="border-b-2 border-indigo-600 focus:outline-none focus:bg-blue-100"
+                  className="border-b-2 border-indigo-600  focus:outline-none focus:bg-blue-100"
                 />
               </div>
               <div>
